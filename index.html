@@ -2,26 +2,100 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>GHOST0X02 | Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHOST0X02 | Portfolio</title>
     <style>
-        body { background-color: #0d1117; color: #58a6ff; font-family: monospace; text-align: center; padding: 50px; }
-        .link-box { border: 1px solid #30363d; padding: 15px; margin: 10px auto; width: 300px; display: block; 
-                    text-decoration: none; color: #c9d1d9; border-radius: 6px; transition: 0.3s; }
-        .link-box:hover { background-color: #161b22; border-color: #8b949e; }
-        h1 { color: #238636; }
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        .ascii-art {
+            color: #238636;
+            font-size: 10px;
+            white-space: pre;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #58a6ff;
+            font-size: 24px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+        .description {
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #8b949e;
+        }
+        .link-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
+            color: #c9d1d9;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .link-card:hover {
+            border-color: #58a6ff;
+            background-color: #21262d;
+            transform: translateY(-2px);
+        }
+        .link-card span {
+            color: #58a6ff;
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>[ GHOST0X02 ]</h1>
-    <pre>
-     _   _  _   _  ____ 
-    | | | || | | ||  __|
-    | |_| || |_| || |__ 
-    |  _  ||  _  ||  __|
-    |_| |_||_| |_||____|
-    </pre>
-    <a href="https://github.com/ghost0x02" class="link-box">GitHub Projelerim</a>
-    <a href="https://play.picoctf.org/users/x71ur" class="link-box">picoCTF Profilim</a>
-    <a href="https://open.spotify.com/user/31vowin724vcul66pvxut74biaja?si=6d0fb8d254c64309" class="link-box">Spotify</a>
+
+<div class="container">
+    <div class="ascii-art">
+  ________  ___  ___  ________  ________  _________  ________  ___      ___ 
+ |\   ____\|\  \|\  \|\   __  \|\   ____\|\___   ___\\   __  \|\  \    /  /|
+ \ \  \___|\ \  \\\  \ \  \|\  \ \  \___|\|___ \  \_\ \  \|\  \ \  \  /  / /
+  \ \  \  __\ \   __  \ \  \\\  \ \_____  \   \ \  \ \ \  \\\  \ \  \/  / / 
+   \ \  \|\  \ \  \ \  \ \  \\\  \|____|\  \   \ \  \ \ \  \\\  \ \    / /  
+    \ \_______\ \__\ \__\ \_______\____\_\  \   \ \__\ \ \_______\ \__/ /   
+     \|_______|\|__|\|__|\|_______|\_________\\   \|__|  \|_______|\|__|/    
+                                   \|_________|                             
+    </div>
+
+    <h1>@ghost0x02</h1>
+    <p class="description">Cybersecurity Researcher & Tool Developer</p>
+
+    <a href="https://github.com/ghost0x02" target="_blank" class="link-card">
+        <span>&gt;</span> GitHub Projeleri
+    </a>
+    
+    <a href="https://picoctf.org/users/x71ur" target="_blank" class="link-card">
+        <span>&gt;</span> picoCTF Profili
+    </a>
+
+    <a href="https://instagram.com/metexfo" target="_blank" class="link-card">
+        <span>&gt;</span> METEXFO Instagram
+    </a>
+
+    <a href="mailto:epostan@buraya.com" class="link-card">
+        <span>&gt;</span> İletişim (Email)
+    </a>
+
+</div>
+
 </body>
 </html>
